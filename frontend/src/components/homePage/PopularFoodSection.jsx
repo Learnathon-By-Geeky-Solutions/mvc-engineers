@@ -80,9 +80,6 @@ const restaurants = [
 const RestaurantCard = ({ image, name, rating, items, place, distance, time, offer }) => (
   
   <div className="col-xl-3 col-lg-4 col-md-6">
-    {
-      console.log({image, name, rating, items, place, distance, time, offer})
-    }
     <div className="vertical-product-box product-style-3">
       <div className="vertical-product-box-img">
         <div>
