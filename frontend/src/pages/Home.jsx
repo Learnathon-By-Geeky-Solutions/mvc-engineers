@@ -1,16 +1,16 @@
-import { useState } from "react";
+import BannerSection from "../components/homePage/BannerSection";
+import ServiceSection from "../components/homePage/ServiceSection";
+import PopularFoodSection from "../components/homePage/PopularFoodSection";
+import AdvertisementSection from "../components/homePage/AdvertisementSection";
 
 
 const Home = () => {
-  const [count, setCount] = useState(0)
-  
-
   return (
-    <div className='text-center'>
-      <h1 className='text-xl mb-8 font-bold'> RMS || Learnathon </h1>
-      <button className='btn btn-primary btn-lg' onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
+    <div>
+      <BannerSection />
+      <ServiceSection />
+      <PopularFoodSection />
+      <AdvertisementSection />
     </div>
   );
 };
