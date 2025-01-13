@@ -117,35 +117,25 @@ const Navbar = () => {
                             <div className="onhover-box onhover-sm">
                                 <ul className="menu-list">
                                 <li>
-                                    <a className="dropdown-item" href="profile.html">
-                                    Profile
-                                    </a>
+                                    <Link to="/profile" className="dropdown-item">Profile</Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="my-order.html">
-                                    My orders
-                                    </a>
+                                    <Link to="/my-order" className="dropdown-item">My orders</Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="saved-address.html">
-                                    Saved Address
-                                    </a>
+                                    <Link to="/saved-address" className="dropdown-item">Saved Address</Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="saved-card.html">
-                                    Saved cards
-                                    </a>
+                                    <Link to="/saved-card" className="dropdown-item">Saved cards</Link>
                                 </li>
                                 <li>
-                                    <a className="dropdown-item" href="setting.html">
-                                    Settings
-                                    </a>
+                                    <Link to="/setting" className="dropdown-item">Settings</Link>
                                 </li>
                                 </ul>
                                 <div className="bottom-btn">
-                                <a href="signin.html" className="theme-color fw-medium d-flex">
+                                <Link to="/signin" className="theme-color fw-medium d-flex">
                                     <i className="ri-login-box-line me-2"></i>Logout
-                                </a>
+                                </Link>
                                 </div>
                             </div>
                             </div>
@@ -164,8 +154,7 @@ const Navbar = () => {
                                     </li>
                                     <li className="nav-item">
                                         <div className="nav-link dropdown-toggle" id="orderMenu" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Order</div>
-                                        {/* <a className="nav-link dropdown-toggle" href="#!" id="orderMenu" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Order</a> */}
+                                
                                         <ul className="dropdown-menu mt-0 border-0" aria-labelledby="orderMenu">
                                             <li>
                                                 <Link to="/menu-listing" className="dropdown-item">Menu listing</Link>
@@ -214,8 +203,6 @@ const Navbar = () => {
                                         </ul>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        {/* <a className="nav-link dropdown-toggle" href="#!" id="pagesMenu" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Pages</a> */}
                                         <div className="nav-link dropdown-toggle" id="pagesMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Pages 
                                         </div>
