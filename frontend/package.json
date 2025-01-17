@@ -12,6 +12,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.64.0",
     "axios": "^1.7.9",
+    "js-cookie": "^3.0.5",
     "localforage": "^1.10.0",
     "match-sorter": "^8.0.0",
     "react": "^18.3.1",
