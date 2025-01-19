@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ config('app.name', 'Open RMS') }}</title>
-    <link href="{{asset('assets/css/tabler.min.css')}}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta24/dist/css/tabler.min.css">
     <style>
         @import url('https://rsms.me/inter/inter.css');
 
@@ -52,6 +52,6 @@
         </footer>
     </div>
 </div>
-<script src="{{asset('assets/js/tabler.min.js')}}" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta24/dist/js/tabler.min.js">
 </body>
 </html>
