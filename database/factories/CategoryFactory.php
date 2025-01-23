@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Table>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Category>
  */
-class TableFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,10 +18,9 @@ class TableFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
-            'capacity' => $this->faker->numberBetween(2, 10),
+            'description' => $this->faker->sentence,
             'active' => $this->faker->boolean,
-            'created_at' => $this->faker->dateTime(),
-            'updated_at' => $this->faker->dateTime(),
+            'position' => $this->faker->numberBetween(1, 10)
         ];
     }
 }
