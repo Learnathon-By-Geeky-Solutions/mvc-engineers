@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('password');
             $table->boolean('is_customer')->default(true);
             $table->boolean('active')->default(true);
-            $table->integer('image_id');
+            $table->integer('image_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
