@@ -13,7 +13,7 @@ class Sidebar extends Component
     {
         $logout();
 
-        $this->redirect('/login', navigate: true);
+        $this->redirect('/login');
     }
     public function render()
     {
