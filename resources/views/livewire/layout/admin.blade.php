@@ -5,34 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ config('app.name', 'Open RMS') }}</title>
+    @livewireStyles
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta24/dist/css/tabler.min.css">
-    <style>
-        @import url('https://rsms.me/inter/inter.css');
-
-        :root {
-            --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
-        }
-
-        body {
-            font-feature-settings: "cv03", "cv04", "cv11";
-        }
-    </style>
     @stack('styles')
 </head>
 <body>
 <div class="page">
-    @include('admin.partials.sidebar')
+    <livewire:admin.partials.sidebar />
     <div class="page-wrapper">
         <!-- Page header -->
         <div class="page-header d-print-none">
             <div class="container-xl">
-                @yield('header')
+{{--                Slot for header--}}
             </div>
         </div>
         <!-- Page body -->
-        <div class="page-body">
-            <div class="container-fluid">
-                @yield('body')
+        <div class="page-body page-wrapper">
+            <div class="container-xl">
+                {{ $slot }}
             </div>
         </div>
         <footer class="footer footer-transparent d-print-none">
@@ -52,6 +42,7 @@
         </footer>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta24/dist/js/tabler.min.js">
+@livewireScripts
+{{--<script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta24/dist/js/tabler.min.js"/>--}}
 </body>
 </html>
