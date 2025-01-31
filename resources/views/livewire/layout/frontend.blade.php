@@ -37,7 +37,9 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/vendors/aos.css')}}">
 
     <!-- remixicon css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/vendors/aos.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset(path: 'assets/frontend/css/vendors/remixicon.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{asset(path: 'assets/frontend/css/vendors/aos.css')}}">
 
     <!-- Theme css -->
     <link rel="stylesheet" id="change-link" type="text/css" href="{{asset('assets/frontend/css/style.css')}}">
@@ -93,22 +95,18 @@
 <!-- mobile fix menu end -->
 
 <!-- theme btn start -->
-{{-- <div class="theme-btns">
+<div class="theme-btns">
     <button type="button" class="btntheme mode-change-button">
         <i id="themeIcon" class="ri-moon-line icon mode-icon"></i>
         <span class="text-value">Dark</span>
     </button>
-    <button type="button" id="rtl-btn" class="btntheme rtlBtnEl">
-        <i class="ri-repeat-line icon"></i>
-        <span class="text-value">RTL</span>
-    </button>
-</div> --}}
+</div>
 <!-- theme btn end -->
 
 <!-- tap to top start -->
-{{-- <button class="scroll scroll-to-top">
+<button class="scroll scroll-to-top">
     <i class="ri-arrow-up-s-line arrow"></i>
-</button> --}}
+</button>
 <!-- tap to top end -->
 
 <!-- location offcanvas start -->

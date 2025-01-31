@@ -7,7 +7,7 @@
                       <i class="ri-menu-line"></i>
                   </span>
           </button>
-          <a href="index-2.html">
+          <a href="/" wire:navigate>
               <img class="img-fluid logo" src="{{ asset('assets/frontend/images/svg/logo2.svg') }}" alt="logo">
           </a>
           <a target="_blank" href="#!" data-bs-toggle="modal" data-bs-target="#location"
@@ -151,48 +151,13 @@
               </div>
               <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-center flex-grow-1">
-                      <li class="nav-item dropdown mega-menu">
-                          <a class="nav-link dropdown-toggle" href="#!" id="accountDropdown" role="button"
-                             data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-                          <div class="dropdown-menu mt-0 border-0 bsb-zoomIn" aria-labelledby="accountDropdown">
-                              <div class="row row-cols-lg-5 row-cols-1 g-xl-4 g-3">
-                                  <div class="col">
-                                      <a href="index-2.html" class="demo-box" target="_blank">
-                                          <img src="{{ asset ('assets/frontend/images/demo/1.png') }}" alt="d-1"
-                                               class="img-fluid demo-img">
-                                          <h5 class="dropdown-item">Classic</h5>
-                                      </a>
-                                  </div>
-                                  <div class="col">
-                                      <a href="index2.html" class="demo-box" target="_blank">
-                                          <img src="{{ asset ('assets/frontend/images/demo/2.png') }}" alt="d-2"
-                                               class="img-fluid demo-img">
-                                          <h5 class="dropdown-item">Elegance</h5>
-                                      </a>
-                                  </div>
-                                  <div class="col">
-                                      <a href="index3.html" class="demo-box" target="_blank">
-                                          <img src="{{ asset ('assets/frontend/images/demo/3.png') }}" alt="d-3"
-                                               class="img-fluid demo-img">
-                                          <h5 class="dropdown-item">Compact</h5>
-                                      </a>
-                                  </div>
-                                  <div class="col">
-                                      <a href="index4.html" class="demo-box" target="_blank">
-                                          <img src="{{ asset ('assets/frontend/images/demo/4.png') }}" alt="d-4"
-                                               class="img-fluid demo-img">
-                                          <h5 class="dropdown-item">Minimal</h5>
-                                      </a>
-                                  </div>
-                                  <div class="col">
-                                      <a href="index5.html" class="demo-box" target="_blank">
-                                          <img src="{{ asset ('assets/frontend/images/demo/5.png') }}" alt="d-5"
-                                               class="img-fluid demo-img">
-                                          <h5 class="dropdown-item">Mordern</h5>
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/" role="button" wire:navigate 
+                          >Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/menu" role="button" wire:navigate 
+                          >Menu</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link dropdown-toggle" href="#!" id="orderMenu" role="button"

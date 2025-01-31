@@ -205,52 +205,52 @@ document.addEventListener("DOMContentLoaded", function () {
 /*====================
   07. RTL js
 ======================*/
-const rtlBtn = document.querySelector("#rtl-btn");
-const html = document.querySelector("html");
-const rtlLink = document.querySelector("#rtl-link");
-const themeBtnParent = document.querySelector(".rtlBtnEl");
+// const rtlBtn = document.querySelector("#rtl-btn");
+// const html = document.querySelector("html");
+// const rtlLink = document.querySelector("#rtl-link");
+// const themeBtnParent = document.querySelector(".rtlBtnEl");
 
-themeBtnParent?.addEventListener("click", function (e) {
-  e.preventDefault();
-  const clicked = e.target.closest(".btntheme")?.id;
-  if (!clicked) return;
-  if (clicked === "rtl-btn") {
-    rtlBtn.id = "ltr-btn";
-    // feather.replace();
-    rtlBtn.querySelector(".text-value").textContent = "LTR";
-    html.setAttribute("dir", "rtl");
-    rtlLink.href = "assets/css/vendors/bootstrap.rtl.css";
-    rtlBtn.classList.add("rtlBtnEl");
-    localStorage.setItem("rtlcss", "assets/css/vendors/bootstrap.rtl.css");
-    localStorage.setItem("dir", "rtl");
-    localStorage.setItem("rtlBtnId", "ltr-btn");
-    localStorage.setItem("textContentRtl", "Ltr");
-  }
+// themeBtnParent?.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   const clicked = e.target.closest(".btntheme")?.id;
+//   if (!clicked) return;
+//   if (clicked === "rtl-btn") {
+//     rtlBtn.id = "ltr-btn";
+//     // feather.replace();
+//     rtlBtn.querySelector(".text-value").textContent = "LTR";
+//     html.setAttribute("dir", "rtl");
+//     rtlLink.href = "assets/css/vendors/bootstrap.rtl.css";
+//     rtlBtn.classList.add("rtlBtnEl");
+//     localStorage.setItem("rtlcss", "assets/css/vendors/bootstrap.rtl.css");
+//     localStorage.setItem("dir", "rtl");
+//     localStorage.setItem("rtlBtnId", "ltr-btn");
+//     localStorage.setItem("textContentRtl", "Ltr");
+//   }
 
-  if (clicked === "ltr-btn") {
-    rtlBtn.id = "rtl-btn";
-    // feather.replace();
-    rtlBtn.querySelector(".text-value").textContent = "RTL";
-    html.setAttribute("dir", "");
-    rtlLink.href = "assets/css/vendors/bootstrap.css";
-    localStorage.setItem("rtlcss", "assets/css/vendors/bootstrap.css");
-    localStorage.setItem("dir", "");
-    localStorage.setItem("rtlBtnId", "rtl-btn");
-    localStorage.setItem("textContentRtl", "Rtl");
-  }
-});
-rtlBtn.id = localStorage.getItem("rtl-btn") 
-  ? localStorage.getItem("rtl-btn")
-  : "rtl-btn";
-rtlBtn.querySelector(".text-value").textContent = localStorage.getItem(
-  "textContentRtl"
-)
-  ? localStorage.getItem("textContentRtl")
-  : "RTL";
-html.setAttribute("dir", localStorage.getItem("dir"));
-rtlLink.href = localStorage.getItem("rtlcss")
-  ? localStorage.getItem("rtlcss")
-  : "assets/css/vendors/bootstrap.css";
+//   if (clicked === "ltr-btn") {
+//     rtlBtn.id = "rtl-btn";
+//     // feather.replace();
+//     rtlBtn.querySelector(".text-value").textContent = "RTL";
+//     html.setAttribute("dir", "");
+//     rtlLink.href = "assets/css/vendors/bootstrap.css";
+//     localStorage.setItem("rtlcss", "assets/css/vendors/bootstrap.css");
+//     localStorage.setItem("dir", "");
+//     localStorage.setItem("rtlBtnId", "rtl-btn");
+//     localStorage.setItem("textContentRtl", "Rtl");
+//   }
+// });
+// rtlBtn.id = localStorage.getItem("rtl-btn") 
+//   ? localStorage.getItem("rtl-btn")
+//   : "rtl-btn";
+// rtlBtn.querySelector(".text-value").textContent = localStorage.getItem(
+//   "textContentRtl"
+// )
+//   ? localStorage.getItem("textContentRtl")
+//   : "RTL";
+// html.setAttribute("dir", localStorage.getItem("dir"));
+// rtlLink.href = localStorage.getItem("rtlcss")
+//   ? localStorage.getItem("rtlcss")
+//   : "assets/css/vendors/bootstrap.css";
 
 /*====================
   08. Dark js
