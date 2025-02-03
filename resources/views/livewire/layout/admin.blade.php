@@ -7,6 +7,17 @@
     <title>{{ config('app.name', 'Open RMS') }}</title>
     @livewireStyles
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta24/dist/css/tabler.min.css">
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+
+        :root {
+            --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+        }
+
+        body {
+            font-feature-settings: "cv03", "cv04", "cv11";
+        }
+    </style>
     @stack('styles')
 </head>
 <body>
@@ -16,7 +27,7 @@
         <!-- Page header -->
         <div class="page-header d-print-none">
             <div class="container-xl">
-{{--                Slot for header--}}
+                @yield('header')
             </div>
         </div>
         <!-- Page body -->
@@ -43,6 +54,6 @@
     </div>
 </div>
 @livewireScripts
-{{--<script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta24/dist/js/tabler.min.js"/>--}}
+<script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta24/dist/js/tabler.min.js"/>
 </body>
 </html>
