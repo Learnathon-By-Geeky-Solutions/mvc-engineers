@@ -18,7 +18,7 @@ class CampaignFactory extends Factory
     {
         return [
             'campaign_type' => $this->faker->randomElement(['email', 'sms', 'phone']),
-            'name' => $this->faker->sentence
+            'name' => $this->faker->sentence,
         ];
     }
 }

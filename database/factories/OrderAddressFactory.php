@@ -22,7 +22,7 @@ class OrderAddressFactory extends Factory
             'name' => $this->faker->name,
             'address' => $this->faker->address,
             'city' => $this->faker->city,
-            'postal_code' => $this->faker->postcode
+            'postal_code' => $this->faker->postcode,
         ];
     }
 }

@@ -14,6 +14,6 @@ class OrderAddress extends Model
         'order_id',
         'address',
         'city',
-        'postal_code'
+        'postal_code',
     ];
 }

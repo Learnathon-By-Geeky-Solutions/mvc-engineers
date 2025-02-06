@@ -19,7 +19,7 @@ class CampaignContentFactory extends Factory
     {
         return [
             'campaign_id' => Campaign::factory(),
-            'content' => $this->faker->text
+            'content' => $this->faker->text,
         ];
     }
 }

@@ -23,7 +23,7 @@ class ItemFactory extends Factory
             'description' => $this->faker->sentence,
             'image_id' => $this->faker->numberBetween(1, 50),
             'active' => $this->faker->boolean,
-            'online' => $this->faker->boolean
+            'online' => $this->faker->boolean,
         ];
     }
 }

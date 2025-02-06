@@ -11,7 +11,7 @@ class Campaign extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-      'campaign_type',
-      'name'
+        'campaign_type',
+        'name',
     ];
 }

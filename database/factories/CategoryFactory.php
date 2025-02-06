@@ -20,7 +20,7 @@ class CategoryFactory extends Factory
             'name' => $this->faker->word,
             'description' => $this->faker->sentence,
             'active' => $this->faker->boolean,
-            'position' => $this->faker->numberBetween(1, 10)
+            'position' => $this->faker->numberBetween(1, 10),
         ];
     }
 }

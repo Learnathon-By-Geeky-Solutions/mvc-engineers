@@ -13,6 +13,6 @@ class CampaignAudience extends Model
     protected $fillable = [
         'campaign_id',
         'user_id',
-        'status'
+        'status',
     ];
 }

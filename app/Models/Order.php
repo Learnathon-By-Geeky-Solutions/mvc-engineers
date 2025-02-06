@@ -21,6 +21,6 @@ class Order extends Model
         'table_id',
         'payment_method_id',
         'amount',
-        'payment_status'
+        'payment_status',
     ];
 }

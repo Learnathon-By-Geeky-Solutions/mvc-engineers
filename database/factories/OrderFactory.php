@@ -20,7 +20,7 @@ class OrderFactory extends Factory
     public function definition(): array
     {
         return [
-           'user_id' => User::factory(),
+            'user_id' => User::factory(),
             'table_id' => Table::factory(),
             'note' => $this->faker->sentence,
             'discount' => $this->faker->randomFloat(2, 0, 50),

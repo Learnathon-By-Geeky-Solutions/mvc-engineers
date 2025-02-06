@@ -21,7 +21,7 @@ class CampaignAudienceFactory extends Factory
         return [
             'campaign_id' => Campaign::factory(),
             'user_id' => User::factory(),
-            'status' => $this->faker->randomElement(['sent', 'failed', 'pending'])
+            'status' => $this->faker->randomElement(['sent', 'failed', 'pending']),
         ];
     }
 }

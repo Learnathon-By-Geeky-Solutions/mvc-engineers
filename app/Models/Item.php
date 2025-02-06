@@ -16,6 +16,6 @@ class Item extends Model
         'description',
         'image_id',
         'active',
-        'online'
+        'online',
     ];
 }

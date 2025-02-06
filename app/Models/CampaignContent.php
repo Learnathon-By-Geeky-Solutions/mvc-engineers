@@ -9,8 +9,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class CampaignContent extends Model
 {
     use HasFactory, SoftDeletes;
+
     protected $fillable = [
         'campaign_id',
-        'content'
+        'content',
     ];
 }

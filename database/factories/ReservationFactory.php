@@ -23,8 +23,8 @@ class ReservationFactory extends Factory
             'sit_required' => $this->faker->boolean,
             'note' => $this->faker->sentence,
             'status' => $this->faker->randomElement(['pending', 'confirmed', 'canceled']),
-            'created_at'   => Carbon::now(),
-            'updated_at'   => Carbon::now(),
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
         ];
     }
 }

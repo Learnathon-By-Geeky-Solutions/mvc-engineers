@@ -22,7 +22,7 @@ class OrderItemFactory extends Factory
             'order_id' => Order::factory(),
             'product_id' => Item::factory(),
             'quantity' => $this->faker->numberBetween(1, 5),
-            'note' => $this->faker->sentence
+            'note' => $this->faker->sentence,
         ];
     }
 }

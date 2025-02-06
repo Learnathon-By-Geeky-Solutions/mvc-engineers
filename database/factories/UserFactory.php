@@ -32,7 +32,7 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
             'image_id' => fake()->numberBetween(1, 10),
             'is_customer' => true,
-            'active' => true
+            'active' => true,
         ];
     }
 
