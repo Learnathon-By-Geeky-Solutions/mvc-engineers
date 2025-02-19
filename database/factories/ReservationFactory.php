@@ -23,8 +23,7 @@ class ReservationFactory extends Factory
             'sit_required' => $this->faker->boolean,
             'note' => $this->faker->sentence,
             'status' => $this->faker->randomElement(['pending', 'confirmed', 'canceled']),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'date_time' => Carbon::now()->addDays($this->faker->numberBetween(1, 7))->format('Y-m-d H:i:s'),
         ];
     }
 }

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('sit_required');
             $table->string('note')->nullable();
             $table->string('status');
+            $table->dateTime('date_time');
             $table->timestamps();
             $table->softDeletes();
         });
