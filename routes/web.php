@@ -11,6 +11,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/reservations', \App\Livewire\Admin\Reservations::class)->name('booking');
 });
 
+
+
+Route::get('/', \App\Livewire\Frontend\Home::class)->name('home');
+
 // Route::view('profile', 'profile')
 //     ->middleware(['auth'])
 //     ->name('profile');
