@@ -465,7 +465,7 @@
 <section class="pt-4 home3">
     <div class="custom-container">
         <div class="position-relative">
-            <img src="assets/images/home-bg2.png" class="img-fluid bg-home-img" alt="">
+            <img src="{{secure_asset("assets/frontend/images/home-bg2.png")}}" class="img-fluid bg-home-img" alt="">
             <div class="home-content">
                 <div class="row w-100 h-100">
                     <div class="col-sm-6 col-12">
@@ -490,19 +490,19 @@
                     </div>
                     <div class="col-sm-6 d-sm-block d-none">
                         <div class="home-right position-relative">
-                            <img src="assets/images/mobile.png" class="img-fluid base-phone" alt="">
+                            <img src="{{secure_asset("assets/frontend/images/mobile.png")}}" class="img-fluid base-phone" alt="">
                             <div class="animated-img">
                                 <div class="food1">
-                                    <img src="assets/images/food1.png" data-aos="fade-down" data-aos-easing="linear"
+                                    <img src="{{secure_asset("assets/frontend/images/food1.png")}}" data-aos="fade-down" data-aos-easing="linear"
                                          data-aos-anchor-placement="top-center" data-aos-duration="1200"
                                          class="img-fluid" alt="">
                                 </div>
                                 <div class="food2">
-                                    <img src="assets/images/food2.png" data-aos-duration="1200" data-aos="fade-down"
+                                    <img src="{{secure_asset("assets/frontend/images/food2.png")}}" data-aos-duration="1200" data-aos="fade-down"
                                          data-aos-anchor-placement="bottom-center" class="img-fluid" alt="">
                                 </div>
                                 <div class="food3">
-                                    <img src="assets/images/food3.png" data-aos="fade-down" data-aos-easing="linear"
+                                    <img src="{{secure_asset("assets/frontend/images/food3.png")}}" data-aos="fade-down" data-aos-easing="linear"
                                          data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"
                                          class="img-fluid" alt="">
                                 </div>
@@ -522,7 +522,7 @@
         <div class="home-features-list row gy-xl-0 gy-md-4 gy-3 row-cols-xl-4 row-cols-lg-3 row-cols-sm-2">
             <div>
                 <div class="home-features-box">
-                    <img class="img-fluid icon" src="assets/images/svg/routing.svg" alt="routing">
+                    <img class="img-fluid icon" src="{{secure_asset("assets/frontend/images/svg/routing.svg")}}" alt="routing">
                     <div class="home-features-content">
                         <h5>Wide Map</h5>
                         <h6>Wide Range of Map, Order from anywhere anytime</h6>
@@ -531,7 +531,7 @@
             </div>
             <div>
                 <div class="home-features-box">
-                    <img class="img-fluid icon" src="assets/images/svg/3d-rotate.svg" alt="3d-rotate">
+                    <img class="img-fluid icon" src="{{secure_asset("assets/frontend/images/svg/3d-rotate.svg")}}" alt="3d-rotate">
                     <div class="home-features-content">
                         <h5>Easiest Order</h5>
                         <h6>Easy and hussle free order online process</h6>
@@ -540,7 +540,7 @@
             </div>
             <div>
                 <div class="home-features-box">
-                    <img class="img-fluid icon" src="assets/images/svg/truck.svg" alt="truck">
+                    <img class="img-fluid icon" src="{{secure_asset("assets/frontend/images/svg/truck.svg")}}" alt="truck">
                     <div class="home-features-content">
                         <h5>Most Delivery</h5>
                         <h6>we ensure your food is delivered swiftly</h6>
@@ -549,7 +549,7 @@
             </div>
             <div>
                 <div class="home-features-box">
-                    <img class="img-fluid icon" src="assets/images/svg/credit-card.svg" alt="truck">
+                    <img class="img-fluid icon" src="{{secure_asset("assets/frontend/images/svg/credit-card.svg")}}" alt="truck">
                     <div class="home-features-content">
                         <h5>Various Payment</h5>
                         <h6>Various payment options to make order seamless</h6>
@@ -577,11 +577,11 @@
                 <div class="vertical-product-box product-style-3">
                     <div class="vertical-product-box-img">
                         <a href="menu-listing.html">
-                            <img class="product-img-top w-100 bg-img" src="assets/images/product/vp-1.png"
+                            <img class="product-img-top w-100 bg-img" src="{{secure_asset("assets/frontend/images/product/vp-1.png")}}"
                                  alt="vp1">
                         </a>
                         <div class="offers">
-                            <img src="assets/images/shape.png" alt="shape" class="img-fluid">
+                            <img src="{{secure_asset("assets/frontend/images/shape.png")}}" alt="shape" class="img-fluid">
                             <h6>upto $2</h6>
                             <div class="d-flex align-items-center justify-content-end">
                                 <h4>50% OFF</h4>
@@ -613,7 +613,7 @@
                 <div class="vertical-product-box product-style-3">
                     <div class="vertical-product-box-img">
                         <a href="menu-listing.html">
-                            <img class="vertical-product-img-top w-100 bg-img" src="assets/images/product/vp-2.png"
+                            <img class="vertical-product-img-top w-100 bg-img" src="{{secure_asset("assets/frontend/images/product/vp-2.png")}}"
                                  alt="vp-2">
                         </a>
                         <div class="offers">
@@ -649,7 +649,7 @@
                 <div class="vertical-product-box product-style-3">
                     <div class="vertical-product-box-img">
                         <a href="menu-listing.html">
-                            <img class="product-img-top w-100 bg-img" src="assets/images/product/vp-3.png"
+                            <img class="product-img-top w-100 bg-img" src=""
                                  alt="vp3">
                         </a>
                     </div>
@@ -680,7 +680,7 @@
                 <div class="vertical-product-box product-style-3">
                     <div class="vertical-product-box-img">
                         <a href="menu-listing.html">
-                            <img class="product-img-top w-100 bg-img" src="assets/images/product/vp-4.png"
+                            <img class="product-img-top w-100 bg-img" src="{{secure_asset("assets/frontend/images/product/vp-4.png")}}"
                                  alt="vp-4">
                         </a>
                     </div>
