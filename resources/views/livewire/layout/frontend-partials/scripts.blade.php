@@ -21,11 +21,12 @@
 <!-- script js -->
 <script src="{{secure_asset('assets/frontend/js/script.js')}}"></script>
 
-<script>
-    AOS.init({
-        once: true
-    });
-    window.addEventListener('load', AOS.refresh);
-</script>
+{{--<script>--}}
+{{--    AOS.init({--}}
+{{--        once: true--}}
+{{--    });--}}
+{{--    window.addEventListener('load', AOS.refresh);--}}
+{{--</script>--}}
 
+@livewireScripts
 @stack('scripts')

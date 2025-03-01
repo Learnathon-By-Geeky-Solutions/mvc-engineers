@@ -149,18 +149,18 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" wire:navigate.hover href="{{route('home')}}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reservation</a>
+                            <a class="nav-link" wire:navigate.hover href="{{route('menu')}}">Menu</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" wire:navigate.hover href="{{route('reservation')}}">Reservation</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" wire:navigate.hover href="{{route('contact')}}">Contact</a>
                         </li>
                     </ul>
                 </div>

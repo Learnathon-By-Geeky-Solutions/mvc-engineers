@@ -18,3 +18,5 @@
 
 <!-- Theme css -->
 <link rel="stylesheet" id="change-link" type="text/css" href="{{secure_asset('assets/frontend/css/style.css')}}">
+
+@livewireStyles
