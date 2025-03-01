@@ -110,36 +110,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="profile-part dropdown-button order-md-2">
-                    <img class="img-fluid profile-pic" src="{{secure_asset('assets/frontend/images/icons/p5.png')}}" alt="profile">
-                    <div>
-                        <h6 class="fw-normal">Hi, Mark Jecno</h6>
-                        <h5 class="fw-medium">My Account</h5>
-                    </div>
-                    <div class="onhover-box onhover-sm">
-                        <ul class="menu-list">
-                            <li>
-                                <a class="dropdown-item" href="profile.html">Profile</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="my-order.html">My orders</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="saved-address.html">Saved Address</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="saved-card.html">Saved cards</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="setting.html">Settings</a>
-                            </li>
-                        </ul>
-                        <div class="bottom-btn">
-                            <a href="signin.html" class="theme-color fw-medium d-flex"><i
-                                    class="ri-login-box-line me-2"></i>Logout</a>
+                @if(Auth::check())
+                    <div class="profile-part dropdown-button order-md-2">
+                        <i>
+                            <img src="{{secure_asset('assets/frontend/images/svg/user.svg')}}" alt="">
+                        </i>
+                        <div>
+                            <h6 class="fw-normal">Hi, {{Auth::user()->name}}</h6>
+                            <h5 class="fw-medium">My Account</h5>
+                        </div>
+                        <div class="onhover-box onhover-sm">
+                            <ul class="menu-list">
+                                <li>
+                                    <a class="dropdown-item" href="profile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="my-order.html">My orders</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="saved-address.html">Saved Address</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="saved-card.html">Saved cards</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="setting.html">Settings</a>
+                                </li>
+                            </ul>
+
+                            <livewire:frontend.component.logout/>
                         </div>
                     </div>
-                </div>
+                @else
+                    <a href="{{route('signin')}}" class="btn btn-sm theme-btn w-100 d-block rounded-2">Sign In</a>
+                @endif
+
             </div>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
                 <div class="offcanvas-header">

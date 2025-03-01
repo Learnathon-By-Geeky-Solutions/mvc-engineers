@@ -17,8 +17,8 @@ Route::get('/', \App\Livewire\Frontend\Home::class)->name('home');
 Route::get('/menu', \App\Livewire\Frontend\Menu::class)->name('menu');
 Route::get('/reservation', \App\Livewire\Frontend\Reservation::class)->name('reservation');
 Route::get('/contact', \App\Livewire\Frontend\Contact::class)->name('contact');
-Route::get('/signin', \App\Livewire\Frontend\SignIn::class)->name('signin');
-Route::get('/signup', \App\Livewire\Frontend\SignUp::class)->name('signup');
+Route::get('/signin', \App\Livewire\Frontend\SignIn::class)->name('signin')->middleware('guest');
+Route::get('/signup', \App\Livewire\Frontend\SignUp::class)->name('signup')->middleware('guest');
 
 
 // Route::view('profile', 'profile')

@@ -11,19 +11,14 @@
                             <a href="{{route('signup')}}"><span class="theme-color">create an a account</span></a>
                         </h5>
                         <div class="form-input">
-                            <input type="tel" class="form-control" placeholder="Enter your number">
+                            <input wire:model.debounce="email" type="email" class="form-control" placeholder="Enter your Email">
                             <i class="ri-phone-line"></i>
                         </div>
                         <div class="form-input">
-                            <input type="password" class="form-control" placeholder="Enter your password">
+                            <input wire:model.debounce="password" type="password" class="form-control" placeholder="Enter your password">
                             <i class="ri-lock-password-line"></i>
                         </div>
-                        <a href="index-2.html" class="btn theme-btn submit-btn w-100 rounded-2">CONTINUE</a>
-                        <p class="fw-normal content-color">
-                            By creating an account, I accept the
-                            <span class="fw-semibold">
-                                    Terms & Conditions & Privacy Policy</span>
-                        </p>
+                        <a wire:click.debounce="Authenticate" class="btn theme-btn submit-btn w-100 rounded-2">Sign In</a>
                     </form>
                 </div>
             </div>
