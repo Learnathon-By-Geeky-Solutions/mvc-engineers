@@ -10,7 +10,6 @@ class Logout extends Component
     public function logout(LogoutAction $logout): void
     {
         $logout();
-        //dd($logout);
 
         $this->redirect(route('home'));
     }
