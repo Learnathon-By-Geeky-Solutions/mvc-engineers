@@ -8,7 +8,7 @@
                         <h2>Sign in</h2>
                         <h5>
                             or
-                            <a href="{{route('signup')}}"><span class="theme-color">create an a account</span></a>
+                            <a wire:navigate.hover href="{{route('signup')}}"><span class="theme-color">create an a account</span></a>
                         </h5>
                         <div class="form-input">
                             <input wire:model.debounce="email" type="email" class="form-control" placeholder="Enter your Email">

@@ -142,7 +142,7 @@
                         </div>
                     </div>
                 @else
-                    <a href="{{route('signin')}}" class="btn btn-sm theme-btn w-100 d-block rounded-2">Sign In</a>
+                    <a wire:navigate.hover href="{{route('signin')}}" class="btn btn-sm theme-btn w-100 d-block rounded-2">Sign In</a>
                 @endif
 
             </div>

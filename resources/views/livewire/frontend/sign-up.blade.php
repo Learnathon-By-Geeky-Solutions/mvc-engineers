@@ -8,7 +8,7 @@
                         <h2>Sign up</h2>
                         <h5>
                             or
-                            <a href="{{route('signin')}}"><span class="theme-color">login to your account</span></a>
+                            <a wire:navigate.hover href="{{route('signin')}}"><span class="theme-color">login to your account</span></a>
                         </h5>
                         <div class="form-input">
                             <input wire:model.debounce="name" type="text" class="form-control" placeholder="Enter your name">
