@@ -10,6 +10,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/users', \App\Livewire\Admin\UserManagement::class)->name('user-management');
     Route::get('/reservations', \App\Livewire\Admin\Reservations::class)->name('booking');
     Route::get('/food-management', \App\Livewire\Admin\FoodManagement\FoodManagement::class)->name('food-management');
+    Route::get('/food-category-management', \App\Livewire\Admin\FoodManagement\FoodCategoryManagement::class)->name('food-category-management');
     Route::get('/Campaigns', \App\Livewire\Admin\Campagin::class)->name('campaigns');
     Route::get('/Orders', \App\Livewire\Admin\Orders::class)->name('orders');
     Route::get('/Reports', \App\Livewire\Admin\Report::class)->name('reports');

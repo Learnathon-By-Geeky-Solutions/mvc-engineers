@@ -56,6 +56,7 @@
 @stack('modals')
 @livewireScripts
 <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta24/dist/js/tabler.min.js"/>
+
 @stack('scripts')
 
 </body>
