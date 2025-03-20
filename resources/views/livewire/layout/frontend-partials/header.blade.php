@@ -8,108 +8,93 @@
                         <i class="ri-menu-line"></i>
                     </span>
             </button>
-            <a href="index-2.html">
-                <img class="img-fluid logo" src="{{secure_asset('assets/frontend/images/svg/logo2.svg')}}" alt="logo">
+            <a href="{{route('home')}}">
+                <img class="img-fluid logo" src="{{secure_asset('assets/frontend/images/khabo koi.png')}}" alt="logo">
             </a>
             <div class="nav-option order-md-2">
-                <div class="dropdown-button">
-                    <div class="cart-button">
-                        <span>5</span>
-                        <i class="ri-shopping-cart-line cart-bag"></i>
-                    </div>
-                    <div class="onhover-box">
-                        <ul class="cart-list">
-                            <li class="product-box-contain">
-                                <div class="drop-cart">
-                                    <a href="#!" class="drop-image">
-                                        <img src="{{secure_asset('assets/frontend/images/product/vp-3.png')}}" class="blur-up lazyloaded" alt="">
-                                    </a>
-                                    <div class="drop-contain">
-                                        <a href="#!">
-                                            <h5>Egg Sandwich</h5>
-                                        </a>
-                                        <h6><span>1 x </span> $80.58</h6>
-                                        <button class="close-button close_button">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-box-contain">
-                                <div class="drop-cart">
-                                    <a href="#!" class="drop-image">
-                                        <img src="{{secure_asset('assets/frontend/images/product/vp-2.png')}}" class="blur-up lazyloaded" alt="">
-                                    </a>
-                                    <div class="drop-contain">
-                                        <a href="#!">
-                                            <h5>Grilled Chicken Quesadilla</h5>
-                                        </a>
-                                        <h6><span>1 x </span> $25.64</h6>
-                                        <button class="close-button close_button">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-box-contain">
-                                <div class="drop-cart">
-                                    <a href="#!" class="drop-image">
-                                        <img src="{{secure_asset('assets/frontend/images/product/vp-4.png')}}" class="blur-up lazyloaded" alt="">
-                                    </a>
-                                    <div class="drop-contain">
-                                        <a href="#!">
-                                            <h5>Spicy Ahi Roll</h5>
-                                        </a>
-                                        <h6><span>1 x </span> $12.00</h6>
-                                        <button class="close-button close_button">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-box-contain">
-                                <div class="drop-cart">
-                                    <a href="#!" class="drop-image">
-                                        <img src="assets/images/product/vp-5.png" class="blur-up lazyloaded" alt="">
-                                    </a>
-                                    <div class="drop-contain">
-                                        <a href="#!">
-                                            <h5>Spicy Dumplings</h5>
-                                        </a>
-                                        <h6><span>1 x </span> $16.28</h6>
-                                        <button class="close-button close_button">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="product-box-contain">
-                                <div class="drop-cart">
-                                    <a href="#!" class="drop-image">
-                                        <img src="assets/images/product/vp-6.png" class="blur-up lazyloaded" alt="">
-                                    </a>
-                                    <div class="drop-contain">
-                                        <a href="#!">
-                                            <h5>Chicken Nugget</h5>
-                                        </a>
-                                        <h6><span>1 x </span> $20.50</h6>
-                                        <button class="close-button close_button">
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="price-box">
-                            <h5>Total :</h5>
-                            <h4 class="theme-color fw-semibold">$155.00</h4>
-                        </div>
-                        <div class="button-group">
-                            <a href="checkout.html" class="btn btn-sm theme-btn w-100 d-block rounded-2">View
-                                Cart</a>
-                        </div>
-                    </div>
-                </div>
+                <a wire:navigate.hover href="{{route('register-restaurant')}}" class="btn btn-sm theme-btn w-100 d-block rounded-2">Register Your Restaurant</a>
+{{--                <div class="dropdown-button">--}}
+{{--                    <div class="cart-button">--}}
+{{--                        <span>5</span>--}}
+{{--                        <i class="ri-shopping-cart-line cart-bag"></i>--}}
+{{--                    </div>--}}
+{{--                    <div class="onhover-box">--}}
+{{--                        <ul class="cart-list">--}}
+{{--                            <li class="product-box-contain">--}}
+{{--                                <div class="drop-cart">--}}
+{{--                                    <a href="#!" class="drop-image">--}}
+{{--                                        <img src="{{secure_asset('assets/frontend/images/product/vp-3.png')}}" class="blur-up lazyloaded" alt="">--}}
+{{--                                    </a>--}}
+{{--                                    <div class="drop-contain">--}}
+{{--                                        <a href="#!">--}}
+{{--                                            <h5>Egg Sandwich</h5>--}}
+{{--                                        </a>--}}
+{{--                                        <h6><span>1 x </span> $80.58</h6>--}}
+{{--                                        <button class="close-button close_button">--}}
+{{--                                            <i class="fa-solid fa-xmark"></i>--}}
+{{--                                        </button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
+{{--                            <li class="product-box-contain">--}}
+{{--                                <div class="drop-cart">--}}
+{{--                                    <a href="#!" class="drop-image">--}}
+{{--                                        <img src="{{secure_asset('assets/frontend/images/product/vp-2.png')}}" class="blur-up lazyloaded" alt="">--}}
+{{--                                    </a>--}}
+{{--                                    <div class="drop-contain">--}}
+{{--                                        <a href="#!">--}}
+{{--                                            <h5>Grilled Chicken Quesadilla</h5>--}}
+{{--                                        </a>--}}
+{{--                                        <h6><span>1 x </span> $25.64</h6>--}}
+{{--                                        <button class="close-button close_button">--}}
+{{--                                            <i class="fa-solid fa-xmark"></i>--}}
+{{--                                        </button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
+{{--                            <li class="product-box-contain">--}}
+{{--                                <div class="drop-cart">--}}
+{{--                                    <a href="#!" class="drop-image">--}}
+{{--                                        <img src="assets/images/product/vp-5.png" class="blur-up lazyloaded" alt="">--}}
+{{--                                    </a>--}}
+{{--                                    <div class="drop-contain">--}}
+{{--                                        <a href="#!">--}}
+{{--                                            <h5>Spicy Dumplings</h5>--}}
+{{--                                        </a>--}}
+{{--                                        <h6><span>1 x </span> $16.28</h6>--}}
+{{--                                        <button class="close-button close_button">--}}
+{{--                                            <i class="fa-solid fa-xmark"></i>--}}
+{{--                                        </button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
+{{--                            <li class="product-box-contain">--}}
+{{--                                <div class="drop-cart">--}}
+{{--                                    <a href="#!" class="drop-image">--}}
+{{--                                        <img src="assets/images/product/vp-6.png" class="blur-up lazyloaded" alt="">--}}
+{{--                                    </a>--}}
+{{--                                    <div class="drop-contain">--}}
+{{--                                        <a href="#!">--}}
+{{--                                            <h5>Chicken Nugget</h5>--}}
+{{--                                        </a>--}}
+{{--                                        <h6><span>1 x </span> $20.50</h6>--}}
+{{--                                        <button class="close-button close_button">--}}
+{{--                                            <i class="fa-solid fa-xmark"></i>--}}
+{{--                                        </button>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                        <div class="price-box">--}}
+{{--                            <h5>Total :</h5>--}}
+{{--                            <h4 class="theme-color fw-semibold">$155.00</h4>--}}
+{{--                        </div>--}}
+{{--                        <div class="button-group">--}}
+{{--                            <a href="checkout.html" class="btn btn-sm theme-btn w-100 d-block rounded-2">View--}}
+{{--                                Cart</a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 @if(Auth::check())
                     <div class="profile-part dropdown-button order-md-2">
                         <i>

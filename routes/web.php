@@ -22,6 +22,7 @@ Route::get('/reservation', \App\Livewire\Frontend\Reservation::class)->name('res
 Route::get('/contact', \App\Livewire\Frontend\Contact::class)->name('contact');
 Route::get('/signin', \App\Livewire\Frontend\SignIn::class)->name('signin')->middleware('guest');
 Route::get('/signup', \App\Livewire\Frontend\SignUp::class)->name('signup')->middleware('guest');
+Route::get('/register-restaurant', \App\Livewire\Frontend\RestaurantRegistration::class)->name('register-restaurant')->middleware('guest');
 
 
 // Route::view('profile', 'profile')
