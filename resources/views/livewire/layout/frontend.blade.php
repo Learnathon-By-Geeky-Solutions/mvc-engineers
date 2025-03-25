@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="{{secure_asset('assets/frontend/images/logo/favicon.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('assets/frontend/images/logo/favicon.png')}}" type="image/x-icon">
     <title>Open RMS</title>
     @include('livewire.layout.frontend-partials.styles')
 </head>

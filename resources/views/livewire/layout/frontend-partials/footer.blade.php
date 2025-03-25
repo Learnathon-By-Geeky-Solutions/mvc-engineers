@@ -1,12 +1,12 @@
 <!-- footer section starts -->
 <footer class="footer-section footer-sm">
-    <img src="{{secure_asset('assets/frontend/images/home-bg2.png')}}" class="img-fluid footer-img" alt="">
+    <img src="{{asset('assets/frontend/images/home-bg2.png')}}" class="img-fluid footer-img" alt="">
     <div class="custom-container">
         <div class="main-footer">
             <div class="row g-3">
                 <div class="col-xl-4 col-lg-12">
                     <div class="footer-logo-part">
-                        <img class="img-fluid logo" src="{{secure_asset('assets/frontend/images/svg/logo.svg')}}" alt="logo">
+                        <img class="img-fluid logo" src="{{asset('assets/frontend/images/svg/logo.svg')}}" alt="logo">
                         <p>
                             Welcome to our online order website! Here, you can browse our
                             wide selection of products and place orders from the comfort
@@ -170,7 +170,7 @@
         <div class="bottom-footer-part">
             <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
                 <h6>@ Copyright 2024 ZOMO. All rights Reserved.</h6>
-                <img class="img-fluid cards" src="{{secure_asset('assets/frontend/images/icons/footer-card.png')}}" alt="card">
+                <img class="img-fluid cards" src="{{asset('assets/frontend/images/icons/footer-card.png')}}" alt="card">
             </div>
         </div>
     </div>

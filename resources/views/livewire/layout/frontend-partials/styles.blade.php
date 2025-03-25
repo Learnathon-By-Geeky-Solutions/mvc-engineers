@@ -5,18 +5,18 @@
       rel="stylesheet">
 
 <!-- bootstrap css -->
-<link rel="stylesheet" type="text/css" id="rtl-link" href="{{secure_asset('assets/frontend/js/bootstrap.bundle.min.js')}}">
+<link rel="stylesheet" type="text/css" id="rtl-link" href="{{asset('assets/frontend/js/bootstrap.bundle.min.js')}}">
 
 <!-- swiper css -->
-<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/frontend/css/vendors/swiper-bundle.min.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/vendors/swiper-bundle.min.css')}}">
 
 <!-- aos css -->
-<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/frontend/css/vendors/aos.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/vendors/aos.css')}}">
 
 <!-- remixicon css -->
-<link rel="stylesheet" type="text/css" href="{{secure_asset('assets/frontend/css/vendors/remixicon.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('assets/frontend/css/vendors/remixicon.css')}}">
 
 <!-- Theme css -->
-<link rel="stylesheet" id="change-link" type="text/css" href="{{secure_asset('assets/frontend/css/style.css')}}">
+<link rel="stylesheet" id="change-link" type="text/css" href="{{asset('assets/frontend/css/style.css')}}">
 
 @livewireStyles

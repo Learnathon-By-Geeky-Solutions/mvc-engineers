@@ -9,7 +9,7 @@
                     </span>
             </button>
             <a href="{{route('home')}}">
-                <img class="img-fluid logo" src="{{secure_asset('assets/frontend/images/khabo koi.png')}}" alt="logo">
+                <img class="img-fluid logo" src="{{asset('assets/frontend/images/khabo koi.png')}}" alt="logo">
             </a>
             <div class="nav-option order-md-2">
                 <a wire:navigate.hover href="{{route('register-restaurant')}}" class="btn btn-sm theme-btn w-100 d-block rounded-2">Register Your Restaurant</a>
@@ -23,7 +23,7 @@
 {{--                            <li class="product-box-contain">--}}
 {{--                                <div class="drop-cart">--}}
 {{--                                    <a href="#!" class="drop-image">--}}
-{{--                                        <img src="{{secure_asset('assets/frontend/images/product/vp-3.png')}}" class="blur-up lazyloaded" alt="">--}}
+{{--                                        <img src="{{asset('assets/frontend/images/product/vp-3.png')}}" class="blur-up lazyloaded" alt="">--}}
 {{--                                    </a>--}}
 {{--                                    <div class="drop-contain">--}}
 {{--                                        <a href="#!">--}}
@@ -39,7 +39,7 @@
 {{--                            <li class="product-box-contain">--}}
 {{--                                <div class="drop-cart">--}}
 {{--                                    <a href="#!" class="drop-image">--}}
-{{--                                        <img src="{{secure_asset('assets/frontend/images/product/vp-2.png')}}" class="blur-up lazyloaded" alt="">--}}
+{{--                                        <img src="{{asset('assets/frontend/images/product/vp-2.png')}}" class="blur-up lazyloaded" alt="">--}}
 {{--                                    </a>--}}
 {{--                                    <div class="drop-contain">--}}
 {{--                                        <a href="#!">--}}
@@ -98,7 +98,7 @@
                 @if(Auth::check())
                     <div class="profile-part dropdown-button order-md-2">
                         <i>
-                            <img src="{{secure_asset('assets/frontend/images/svg/user.svg')}}" alt="">
+                            <img src="{{asset('assets/frontend/images/svg/user.svg')}}" alt="">
                         </i>
                         <div>
                             <h6 class="fw-normal">Hi, {{Auth::user()->name}}</h6>

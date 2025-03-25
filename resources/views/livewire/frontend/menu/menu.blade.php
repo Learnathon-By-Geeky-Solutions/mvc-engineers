@@ -4,7 +4,7 @@
         <div class="container">
             <div class="restaurant-box">
                 <div class="restaurant-image">
-                    <img class="img-fluid img" src="{{secure_asset('assets/frontend/images/icons/brand13.png')}}" alt="brand13">
+                    <img class="img-fluid img" src="{{asset('assets/frontend/images/icons/brand13.png')}}" alt="brand13">
                 </div>
                 <div class="restaurant-details">
                     <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">

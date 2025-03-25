@@ -2,7 +2,7 @@
 <section class="pt-4 home3">
     <div class="custom-container">
         <div class="position-relative">
-            <img src="{{secure_asset("assets/frontend/images/home-bg2.png")}}" class="img-fluid bg-home-img" alt="">
+            <img src="{{asset("assets/frontend/images/home-bg2.png")}}" class="img-fluid bg-home-img" alt="">
             <div class="home-content">
                 <div class="row w-100 h-100">
                     <div class="col-sm-6 col-12">
@@ -27,19 +27,19 @@
                     </div>
                     <div class="col-sm-6 d-sm-block d-none">
                         <div class="home-right position-relative">
-                            <img src="{{secure_asset("assets/frontend/images/mobile.png")}}" class="img-fluid base-phone" alt="">
+                            <img src="{{asset("assets/frontend/images/mobile.png")}}" class="img-fluid base-phone" alt="">
                             <div class="animated-img">
                                 <div class="food1">
-                                    <img src="{{secure_asset("assets/frontend/images/food1.png")}}" data-aos="fade-down" data-aos-easing="linear"
+                                    <img src="{{asset("assets/frontend/images/food1.png")}}" data-aos="fade-down" data-aos-easing="linear"
                                          data-aos-anchor-placement="top-center" data-aos-duration="1200"
                                          class="img-fluid" alt="">
                                 </div>
                                 <div class="food2">
-                                    <img src="{{secure_asset("assets/frontend/images/food2.png")}}" data-aos-duration="1200" data-aos="fade-down"
+                                    <img src="{{asset("assets/frontend/images/food2.png")}}" data-aos-duration="1200" data-aos="fade-down"
                                          data-aos-anchor-placement="bottom-center" class="img-fluid" alt="">
                                 </div>
                                 <div class="food3">
-                                    <img src="{{secure_asset("assets/frontend/images/food3.png")}}" data-aos="fade-down" data-aos-easing="linear"
+                                    <img src="{{asset("assets/frontend/images/food3.png")}}" data-aos="fade-down" data-aos-easing="linear"
                                          data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"
                                          class="img-fluid" alt="">
                                 </div>

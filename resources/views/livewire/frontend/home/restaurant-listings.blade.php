@@ -15,11 +15,11 @@
                     <div class="vertical-product-box product-style-3">
                         <div class="vertical-product-box-img">
                             <a href="menu-listing.html">
-                                <img class="product-img-top w-100 bg-img" src="{{secure_asset("assets/frontend/images/product/vp-1.png")}}"
+                                <img class="product-img-top w-100 bg-img" src="{{asset("assets/frontend/images/product/vp-1.png")}}"
                                      alt="vp1">
                             </a>
                             <div class="offers">
-                                <img src="{{secure_asset("assets/frontend/images/shape.png")}}" alt="shape" class="img-fluid">
+                                <img src="{{asset("assets/frontend/images/shape.png")}}" alt="shape" class="img-fluid">
                                 <h6>upto $2</h6>
                                 <div class="d-flex align-items-center justify-content-end">
                                     <h4>50% OFF</h4>
@@ -51,7 +51,7 @@
                     <div class="vertical-product-box product-style-3">
                         <div class="vertical-product-box-img">
                             <a href="menu-listing.html">
-                                <img class="vertical-product-img-top w-100 bg-img" src="{{secure_asset("assets/frontend/images/product/vp-2.png")}}"
+                                <img class="vertical-product-img-top w-100 bg-img" src="{{asset("assets/frontend/images/product/vp-2.png")}}"
                                      alt="vp-2">
                             </a>
                             <div class="offers">
@@ -118,7 +118,7 @@
                     <div class="vertical-product-box product-style-3">
                         <div class="vertical-product-box-img">
                             <a href="menu-listing.html">
-                                <img class="product-img-top w-100 bg-img" src="{{secure_asset("assets/frontend/images/product/vp-4.png")}}"
+                                <img class="product-img-top w-100 bg-img" src="{{asset("assets/frontend/images/product/vp-4.png")}}"
                                      alt="vp-4">
                             </a>
                         </div>
