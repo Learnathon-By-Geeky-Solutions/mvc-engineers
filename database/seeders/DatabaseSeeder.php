@@ -23,6 +23,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+
+        $this->call([
+            RolePermissionSeeder::class,
+            DummyUsersSeeder::class,
+        ]);
         User::factory(10)->create();
         Table::factory(10)->create();
         Reservation::factory(10)->create();

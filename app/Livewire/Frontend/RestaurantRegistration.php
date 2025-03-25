@@ -151,8 +151,10 @@ class RestaurantRegistration extends Component
                 'email' => $this->email,
                 'phone' => $this->phone,
                 'password' => Hash::make($this->password),
-                'role' => 'restaurant_owner',
             ]);
+
+            // Assign role
+            $user->assignRole('restaurant_owner');
 
             // Process logo and photos
             $logoPath = null;

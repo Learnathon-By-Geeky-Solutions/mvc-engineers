@@ -21,8 +21,8 @@ return new class extends Migration {
             $table->string('opening_time');
             $table->string('closing_time');
             $table->string('days_open');
-            $table->string('logo');
-            $table->string('photos');
+            $table->string('logo')->nullable();
+            $table->string('photos')->nullable();
             $table->string('status');
             $table->timestamps();
             $table->softDeletes();
