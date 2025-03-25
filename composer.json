@@ -10,7 +10,8 @@
         "laravel/framework": "^11.31",
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.5",
-        "livewire/volt": "^1.0"
+        "livewire/volt": "^1.0",
+        "spatie/laravel-permission": "^6.16"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.14",
