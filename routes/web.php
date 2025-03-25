@@ -16,6 +16,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/Reports', \App\Livewire\Admin\Report::class)->name('reports');
 });
 
+//routs for restaurant_owner role
+Route::middleware(['auth','role:restaurant_owner'])->group(function () {
+    Route::get('/list-restaurants', \App\Livewire\Admin\RestaurantList::class)->name('restaurants');
+    Route::get('/manage-restaurant', \App\Livewire\Admin\ManageRestaurant::class)->name('manage-restaurant');
+});
+
 Route::get('/', \App\Livewire\Frontend\Home::class)->name('home');
 Route::get('/menu', \App\Livewire\Frontend\Menu::class)->name('menu');
 Route::get('/reservation', \App\Livewire\Frontend\Reservation::class)->name('reservation');

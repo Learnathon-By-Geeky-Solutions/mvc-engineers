@@ -12,7 +12,12 @@
                 <img class="img-fluid logo" src="{{asset('assets/frontend/images/khabo koi.png')}}" alt="logo">
             </a>
             <div class="nav-option order-md-2">
-                <a wire:navigate.hover href="{{route('register-restaurant')}}" class="btn btn-sm theme-btn w-100 d-block rounded-2">Register Your Restaurant</a>
+                @hasanyrole('super_admin|restaurant_owner')
+                    <a  href="{{route('dashboard')}}" class="btn btn-sm theme-btn w-100 d-block rounded-2">Dashboard</a>
+                @else
+                    <a wire:navigate.hover href="{{route('register-restaurant')}}" class="btn btn-sm theme-btn w-100 d-block rounded-2">Register Your Restaurant</a>
+                @endhasanyrole
+
 {{--                <div class="dropdown-button">--}}
 {{--                    <div class="cart-button">--}}
 {{--                        <span>5</span>--}}
@@ -95,7 +100,8 @@
 {{--                        </div>--}}
 {{--                    </div>--}}
 {{--                </div>--}}
-                @if(Auth::check())
+
+                @hasanyrole('super_admin|restaurant_owner')
                     <div class="profile-part dropdown-button order-md-2">
                         <i>
                             <img src="{{asset('assets/frontend/images/svg/user.svg')}}" alt="">
@@ -128,7 +134,7 @@
                     </div>
                 @else
                     <a wire:navigate.hover href="{{route('signin')}}" class="btn btn-sm theme-btn w-100 d-block rounded-2">Sign In</a>
-                @endif
+                @endhasanyrole
 
             </div>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">

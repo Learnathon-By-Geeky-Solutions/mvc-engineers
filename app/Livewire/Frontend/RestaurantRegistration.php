@@ -153,6 +153,7 @@ class RestaurantRegistration extends Component
                 'password' => Hash::make($this->password),
             ]);
 
+
             // Assign role
             $user->assignRole('restaurant_owner');
 
@@ -193,13 +194,10 @@ class RestaurantRegistration extends Component
             // Login the user
             auth()->login($user);
 
-            // Redirect to dashboard with success message
-            return redirect()->route('restaurant.dashboard')->with('success', 'Restaurant registered successfully! Your listing is pending approval.');
-
+            return $this->redirect(route('dashboard'));
         } catch (\Exception $e) {
             \DB::rollback();
             session()->flash('error', 'Registration failed: ' . $e->getMessage());
-            dump($e->getMessage());
         }
     }
 

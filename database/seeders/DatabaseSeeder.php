@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             RolePermissionSeeder::class,
             DummyUsersSeeder::class,
         ]);
-        User::factory(10)->create();
+//        User::factory(10)->create();
         Table::factory(10)->create();
         Reservation::factory(10)->create();
         PaymentMethod::factory(10)->create();
