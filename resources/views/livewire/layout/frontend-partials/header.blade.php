@@ -111,23 +111,23 @@
                             <h5 class="fw-medium">My Account</h5>
                         </div>
                         <div class="onhover-box onhover-sm">
-                            <ul class="menu-list">
-                                <li>
-                                    <a class="dropdown-item" href="profile.html">Profile</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="my-order.html">My orders</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="saved-address.html">Saved Address</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="saved-card.html">Saved cards</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="setting.html">Settings</a>
-                                </li>
-                            </ul>
+{{--                            <ul class="menu-list">--}}
+{{--                                <li>--}}
+{{--                                    <a class="dropdown-item" href="profile.html">Profile</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a class="dropdown-item" href="my-order.html">My orders</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a class="dropdown-item" href="saved-address.html">Saved Address</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a class="dropdown-item" href="saved-card.html">Saved cards</a>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <a class="dropdown-item" href="setting.html">Settings</a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
 
                             <livewire:frontend.component.logout/>
                         </div>
