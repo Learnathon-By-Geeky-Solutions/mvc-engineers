@@ -18,15 +18,15 @@ Route::middleware(['auth'])->group(function () {
 
 
 
-Route::middleware(['auth','role:restaurant_owner'])->group(function () {
-    Route::get('/choose-restaurant', \App\Livewire\Admin\ChooseRestaurant::class)->name('choose-restaurant');
-    Route::get('/manage-restaurant/{id}', \App\Livewire\Admin\ManageRestaurant::class)->name('manage-restaurant');
-    Route::get('/manage-restaurant/{id}/basic-information', Dashboard::class)->name('dashboard');
-    Route::get('/manage-restaurant/{id}/gallery', Dashboard::class)->name('dashboard');
-    Route::get('/manage-restaurant/{id}/booking-configuration', Dashboard::class)->name('dashboard');
-    Route::get('/manage-restaurant/{id}/menu', \App\Livewire\Admin\ManageRestaurantMenu::class)->name('manage-restaurant-menu');
-    Route::get('/manage-restaurant/{id}/reviews', \App\Livewire\Admin\ManageRestaurantMenuCategory::class)->name('manage-restaurant-menu-category');
-});
+// Route::middleware(['auth','role:restaurant_owner'])->group(function () {
+//     Route::get('/choose-restaurant', \App\Livewire\Admin\ChooseRestaurant::class)->name('choose-restaurant');
+//     Route::get('/manage-restaurant/{id}', \App\Livewire\Admin\ManageRestaurant::class)->name('manage-restaurant');
+//     Route::get('/manage-restaurant/{id}/basic-information', Dashboard::class)->name('dashboard');
+//     Route::get('/manage-restaurant/{id}/gallery', Dashboard::class)->name('dashboard');
+//     Route::get('/manage-restaurant/{id}/booking-configuration', Dashboard::class)->name('dashboard');
+//     Route::get('/manage-restaurant/{id}/menu', \App\Livewire\Admin\ManageRestaurantMenu::class)->name('manage-restaurant-menu');
+//     Route::get('/manage-restaurant/{id}/reviews', \App\Livewire\Admin\ManageRestaurantMenuCategory::class)->name('manage-restaurant-menu-category');
+// });
 
 
 
