@@ -10,6 +10,15 @@ use Illuminate\Support\Collection;
 
 class RestaurantRegistrationService
 {
+    /**
+     * Register a new restaurant and user
+     *
+     * @param array $userData
+     * @param array $restaurantData
+     * @param mixed $logo
+     * @param Collection|null $photos
+     * @return User
+     */
     public function register(array $userData, array $restaurantData, $logo = null, Collection $photos = null)
     {
         return DB::transaction(function () use ($userData, $restaurantData, $logo, $photos) {
