@@ -4,6 +4,7 @@ namespace App\Livewire\Frontend;
 
 use App\Models\Restaurant;
 use App\Models\User;
+use App\Services\RestaurantRegistrationService;
 use Hash;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -13,33 +14,21 @@ class RestaurantRegistration extends Component
 {
     use WithFileUploads;
 
-    // Step tracking
+    // Add service property
+    protected RestaurantRegistrationService $registrationService;
+
+    public function boot(RestaurantRegistrationService $registrationService): void
+    {
+        $this->registrationService = $registrationService;
+    }
+
+    // All the form properties...
     public $currentStep = 1;
     public $totalSteps = 4;
-
-    // Step 1: Account Information
-    public $name;
-    public $email;
-    public $phone;
-    public $password;
-    public $password_confirmation;
-
-    // Step 2: Restaurant Information
-    public $restaurant_name;
-    public $restaurant_type;
-    public $restaurant_description;
-    public $cuisine = [];
-
-    // Step 3: Location Information
-    public $address;
-    public $city;
-    public $postal_code;
-
-    // Step 4: Additional Details
-    public $website;
-    public $opening_time;
-    public $closing_time;
-    public $days_open = [];
+    public $name, $email, $phone, $password, $password_confirmation;
+    public $restaurant_name, $restaurant_type, $restaurant_description, $cuisine = [];
+    public $address, $city, $postal_code;
+    public $website, $opening_time, $closing_time, $days_open = [];
     public $logo;
     public $photos = [];
 
@@ -137,66 +126,36 @@ class RestaurantRegistration extends Component
     public function register()
     {
         $this->validateCurrentStep();
-
-        // Validate all fields before submission
         $this->validate();
 
-        // Begin database transaction
-        \DB::beginTransaction();
-
         try {
-            // Create user
-            $user = User::create([
-                'name' => $this->name,
-                'email' => $this->email,
-                'phone' => $this->phone,
-                'password' => Hash::make($this->password),
-            ]);
+            $user = $this->registrationService->register(
+                [
+                    'name' => $this->name,
+                    'email' => $this->email,
+                    'phone' => $this->phone,
+                    'password' => $this->password,
+                ],
+                [
+                    'restaurant_name' => $this->restaurant_name,
+                    'restaurant_type' => $this->restaurant_type,
+                    'restaurant_description' => $this->restaurant_description,
+                    'cuisine' => $this->cuisine,
+                    'address' => $this->address,
+                    'city' => $this->city,
+                    'postal_code' => $this->postal_code,
+                    'website' => $this->website,
+                    'opening_time' => $this->opening_time,
+                    'closing_time' => $this->closing_time,
+                    'days_open' => $this->days_open,
+                ],
+                $this->logo,
+                collect($this->photos)
+            );
 
-
-            // Assign role
-            $user->assignRole('restaurant_owner');
-
-            // Process logo and photos
-            $logoPath = null;
-            if ($this->logo) {
-                $logoPath = $this->logo->store('restaurant_logos', 'public');
-            }
-
-            $photosPaths = [];
-            if ($this->photos) {
-                foreach ($this->photos as $photo) {
-                    $photosPaths[] = $photo->store('restaurant_photos', 'public');
-                }
-            }
-
-            // Create restaurant
-            $restaurant = Restaurant::create([
-                'user_id' => $user->id,
-                'name' => $this->restaurant_name,
-                'type' => $this->restaurant_type,
-                'description' => $this->restaurant_description,
-                'cuisine' => json_encode($this->cuisine),
-                'address' => $this->address,
-                'city' => $this->city,
-                'postal_code' => $this->postal_code,
-                'website' => $this->website,
-                'opening_time' => $this->opening_time,
-                'closing_time' => $this->closing_time,
-                'days_open' => json_encode($this->days_open),
-                'logo' => $logoPath,
-                'photos' => json_encode($photosPaths),
-                'status' => 'pending', // Pending approval
-            ]);
-
-            \DB::commit();
-
-            // Login the user
             auth()->login($user);
-
             return $this->redirect(route('dashboard'));
         } catch (\Exception $e) {
-            \DB::rollback();
             session()->flash('error', 'Registration failed: ' . $e->getMessage());
         }
     }
