@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Table;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -9,6 +10,8 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class TableFactory extends Factory
 {
+    protected $model = Table::class;
+
     /**
      * Define the model's default state.
      *
@@ -17,11 +20,9 @@ class TableFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->word,
-            'capacity' => $this->faker->numberBetween(2, 10),
-            'active' => $this->faker->boolean,
-            'created_at' => $this->faker->dateTime(),
-            'updated_at' => $this->faker->dateTime(),
+            'number' => $this->faker->unique()->numberBetween(1, 50),
+            'capacity' => $this->faker->randomElement([2, 4, 6, 8, 10]),
+            'status' => $this->faker->randomElement(['available', 'occupied', 'reserved']),
         ];
     }
 }
